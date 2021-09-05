@@ -1,0 +1,279 @@
+.t-align_center {
+  position: relative;
+}
+
+.map-point {
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.map-point > .img-point {
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.map-point > .img-point > svg {
+  pointer-events: none;
+}
+
+.map-point > .img-point:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.map-point > .img-point:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.map-point > .img-point.active {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.map-point > .message.right {
+  position: absolute;
+  background-color: #e0dddd;
+  position: absolute;
+  will-change: transform;
+  top: -79px;
+  left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  -webkit-transform-origin: 50 50;
+          transform-origin: 50 50;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.map-point > .message.right.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.map-point > .message.right::before {
+  position: absolute;
+  content: '';
+  display: block;
+  border-color: #e0dddd;
+  border-top: 20px solid transparent;
+  border-right: 20px solid #e0dddd;
+  border-bottom: 20px solid transparent;
+  z-index: 500;
+  top: 50px;
+  left: -19px;
+}
+
+.map-point > .message.right .close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 30px;
+  height: 40px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.map-point > .message.right ul > li {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.map-point > .message.right .mes-header {
+  font-family: 'Roboto', Arial, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 24px;
+  text-transform: uppercase;
+}
+
+.map-point > .message.right .map-text {
+  width: 300px;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.map-point > .message.right .to-link {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #5095b2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0 0 10px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.map-point > .message.right .to-link:hover {
+  background-color: #3c91b6;
+}
+
+.map-point > .message.right .to-link:active {
+  background-color: #1487b8;
+}
+
+.map-point > .message.left {
+  position: absolute;
+  background-color: #e0dddd;
+  position: absolute;
+  will-change: transform;
+  top: -83px;
+  left: -400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  -webkit-transform-origin: 50 50;
+          transform-origin: 50 50;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.map-point > .message.left.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.map-point > .message.left::before {
+  position: absolute;
+  content: '';
+  display: block;
+  border-color: #e0dddd;
+  border-top: 20px solid transparent;
+  border-left: 20px solid #e0dddd;
+  border-bottom: 20px solid transparent;
+  z-index: 500;
+  top: 50px;
+  right: -19px;
+}
+
+.map-point > .message.left .close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 30px;
+  height: 40px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.map-point > .message.left ul > li {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.map-point > .message.left .mes-header {
+  font-family: 'Roboto', Arial, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 24px;
+  text-transform: uppercase;
+}
+
+.map-point > .message.left .map-text {
+  width: 300px;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.map-point > .message.left .to-link {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #5095b2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0 0 10px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.map-point > .message.left .to-link:hover {
+  background-color: #3c91b6;
+}
+
+.map-point > .message.left .to-link:active {
+  background-color: #1487b8;
+}
+/*# sourceMappingURL=set-point.css.map */

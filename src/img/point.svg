@@ -1,0 +1,5 @@
+<xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="15" cy="15" r="15" fill="rgba(24,138,228,0.82)" />
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="6.176" cy="6.176" r="6.176" transform="translate(8.824 8.824)"
+        fill="#fff" />
+</svg>

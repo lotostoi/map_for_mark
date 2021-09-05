@@ -1,0 +1,197 @@
+.t-align_center {
+    position: relative;
+}
+
+.map-point {
+    position: absolute;
+    transition: transform 0.3s;
+    & > .img-point {
+        cursor: pointer;
+        transform: scale(1);
+        transition: transform 0.3s;
+        & > svg {
+            pointer-events: none;
+        }
+    }
+
+    & > .img-point:hover {
+        transform: scale(1.5);
+        transition: transform 0.3s;
+    }
+    & > .img-point:active {
+        transform: scale(1.2);
+        transition: transform 0.3s;
+    }
+    & > .img-point.active {
+        transform: scale(1.5);
+        transition: transform 0.3s;
+    }
+
+    & > .message.right {
+        position: absolute;
+        background-color: rgb(224, 221, 221);
+        position: absolute;
+        will-change: transform;
+        top: -79px;
+        left: 50px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        transform-origin: 50 50;
+        transition: transform 0.3s;
+        transform: scale(0);
+
+        // transform: translate3d(605px, 3px, 0px);
+        &.active {
+            transform: scale(1);
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+            border-color: rgb(224, 221, 221);
+            border-top: 20px solid transparent;
+            border-right: 20px solid rgb(224, 221, 221);
+            border-bottom: 20px solid transparent;
+            z-index: 500;
+            top: 50px;
+            left: -19px;
+        }
+
+        .close {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            width: 30px;
+            height: 40px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+
+        ul > li {
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        .mes-header {
+            font-family: 'Roboto', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 24px;
+            text-transform: uppercase;
+        }
+
+        .map-text {
+            width: 300px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .to-link {
+            padding: 20px;
+            display: flex;
+            width: 100%;
+            background-color: #5095b2;
+            justify-content: center;
+            box-sizing: border-box;
+            border-radius: 0 0 10px 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        .to-link:hover {
+            background-color: #3c91b6;
+        }
+        .to-link:active {
+            background-color: #1487b8;
+        }
+    }
+    & > .message.left {
+        position: absolute;
+        background-color: rgb(224, 221, 221);
+        position: absolute;
+        will-change: transform;
+        top: -83px;
+        left: -400px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        transform-origin: 50 50;
+        transition: transform 0.3s;
+        transform: scale(0);
+
+        &.active {
+            transform: scale(1);
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+            border-color: rgb(224, 221, 221);
+            border-top: 20px solid transparent;
+            border-left: 20px solid rgb(224, 221, 221);
+            border-bottom: 20px solid transparent;
+            z-index: 500;
+            top: 50px;
+            right: -19px;
+        }
+
+        .close {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            width: 30px;
+            height: 40px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+
+        ul > li {
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        .mes-header {
+            font-family: 'Roboto', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 24px;
+            text-transform: uppercase;
+        }
+
+        .map-text {
+            width: 300px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .to-link {
+            padding: 20px;
+            display: flex;
+            width: 100%;
+            background-color: #5095b2;
+            justify-content: center;
+            box-sizing: border-box;
+            border-radius: 0 0 10px 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        .to-link:hover {
+            background-color: #3c91b6;
+        }
+        .to-link:active {
+            background-color: #1487b8;
+        }
+    }
+}
