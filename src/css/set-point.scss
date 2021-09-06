@@ -1,5 +1,19 @@
+@mixin mq($width, $type: min) {
+    @if $type==max {
+        $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+        @content;
+    }
+}
+
 .t-align_center {
     position: relative;
+    width: 100%;
+
+    & > img {
+        width: 100%;
+    }
 }
 
 .map-point {
@@ -8,8 +22,47 @@
     & > .img-point {
         cursor: pointer;
         transform: scale(1);
+        .view-point {
+            display: flex;
+            border: 2px solid rgb(60, 60, 218);
+            background-color: rgb(236, 232, 232);
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            @include mq(1200, max) {
+                width: 27px;
+                height: 27px;
+            }
+            @include mq(1000, max) {
+                width: 25px;
+                height: 25px;
+            }
+            @include mq(800, max) {
+                width: 20px;
+                height: 20px;
+            }
+            @include mq(600, max) {
+                width: 18px;
+                height: 18px;
+                font-size: 12px;
+            }
+            @include mq(400, max) {
+                width: 18px;
+                height: 18px;
+                font-size: 12px;
+            }
+            @include mq(320, 0.45) {
+                width: 18px;
+                height: 18px;
+                font-size: 12px;
+            }
+        }
+
         transition: transform 0.3s;
-        & > svg {
+        & > span {
             pointer-events: none;
         }
     }
@@ -40,6 +93,7 @@
         transform-origin: 50 50;
         transition: transform 0.3s;
         transform: scale(0);
+        z-index: 1000;
 
         // transform: translate3d(605px, 3px, 0px);
         &.active {
@@ -124,6 +178,7 @@
         transform-origin: 50 50;
         transition: transform 0.3s;
         transform: scale(0);
+        z-index: 1000;
 
         &.active {
             transform: scale(1);
